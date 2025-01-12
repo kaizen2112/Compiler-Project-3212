@@ -1,0 +1,34 @@
+29.900002
+40.000000
+3.500000
+"Hello everyone :3"
+5.000000
+"Hello World!!!"
+0.000000
+Function invoked: MUL(10.000000,100.000000)= 1000.000000
+0.000000
+Function invoked: SUM(5.000000,7.000000)= 12.000000
+Function invoked: SUM(5.000000,8.000000)= 13.000000
+Function invoked: SUM(5.000000,7.000000)= 12.000000
+"ab+de is less than bc+cd"
+"Now we move to the Match cases"
+Function invoked: MUL(2.000000,3.000000)= 6.000000
+Function invoked: MUL(3.000000,4.000000)= 12.000000
+Function invoked: MUL(5.000000,4.000000)= 20.000000
+"Matched with third case"
+"Now we move to the Repeat loops."
+"First repeat loop:"
+"This message will be shown 2 times"
+"This message will be shown 2 times"
+"Second repeat loop:"
+"This message will be shown 3 times"
+"This message will be shown 3 times"
+"This message will be shown 3 times"
+"Now we move to the until do loops"
+"This message will be shown 5 times"
+"This message will be shown 5 times"
+"This message will be shown 5 times"
+"This message will be shown 5 times"
+"This message will be shown 5 times"
+Function invoked: PLD: "1001" is a palindromic string
+"abbcbba" is a palindromic string
