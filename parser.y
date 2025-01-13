@@ -63,7 +63,7 @@ stmt: epsilon
           | SM stmt
           | declarations SM stmt
           | commentstmt stmt
-					| showstmt SM stmt   /*print statement*/
+		            | showstmt SM stmt   /*print statement*/
 					| assignment SM stmt
 				  | ifstmt stmt         /*ifelse statement*/
 					| switchstmt stmt

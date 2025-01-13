@@ -728,245 +728,243 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 YY_RULE_SETUP
 #line 16 "flex.l"
-{ strcpy(yylval.str, yytext); return SLCOM; }
+{  strcpy(yylval.str, yytext); return SLCOM; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
 #line 17 "flex.l"
-{return NUMERIC;}
+{  return NUMERIC;  }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
 #line 18 "flex.l"
-{return WHOLE;}
+{  return WHOLE;    }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
 #line 19 "flex.l"
-{return TEXT;}
+{  return TEXT;     }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
 #line 21 "flex.l"
-{
-  strcpy(yylval.str,yytext);
-  return STRING;
-}
+{  strcpy(yylval.str,yytext);
+                             return STRING;
+                          }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 25 "flex.l"
+#line 24 "flex.l"
 {
-  /* is float */
-  yylval.f=atof(yytext);
-  return NUMf;
-}
+                             /* is float */
+                             yylval.f=atof(yytext);
+                             return NUMf;
+                          }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 30 "flex.l"
+#line 29 "flex.l"
 {
-  /* is float */
-  yylval.f=atof(yytext);
-  return NUMf;
-
-}
+                             /* is float */
+                             yylval.f=atof(yytext);
+                             return NUMf;
+                          }  
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 36 "flex.l"
+#line 34 "flex.l"
 {
-     yylval.i=atoi(yytext);
-     return NUMi;
-}
+                             yylval.i=atoi(yytext);
+                             return NUMi;
+                          }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 40 "flex.l"
-{ return MATCH; }
+#line 38 "flex.l"
+{  return MATCH;  }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 41 "flex.l"
-{ return CHECK;  }
+#line 39 "flex.l"
+{  return CHECK;  }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 42 "flex.l"
-{ return NOMATCH; }
+#line 40 "flex.l"
+{  return NOMATCH; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 43 "flex.l"
-{ return SHOW; }
+#line 41 "flex.l"
+{  return SHOW; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 47 "flex.l"
-{return LPT;}
+#line 45 "flex.l"
+{  return LPT;  }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 48 "flex.l"
-{return RPT;}
+#line 46 "flex.l"
+{  return RPT;  }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 50 "flex.l"
-{return LCB;}
+#line 48 "flex.l"
+{  return LCB;  }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 51 "flex.l"
-{return RCB;}
+#line 49 "flex.l"
+{  return RCB;  }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 52 "flex.l"
-{return LTB;}
+#line 50 "flex.l"
+{  return LTB;  }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 53 "flex.l"
-{return RTB;}
+#line 51 "flex.l"
+{  return RTB;  }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 54 "flex.l"
-{return CM;}
+#line 52 "flex.l"
+{  return CM;  }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 55 "flex.l"
-{return SM;}
+#line 53 "flex.l"
+{  return SM;  }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 57 "flex.l"
-{return ADD; }
+#line 55 "flex.l"
+{  return ADD;  }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 58 "flex.l"
-{return SUB; }
+#line 56 "flex.l"
+{  return SUB;  }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 59 "flex.l"
-{return MULFN;}
+#line 57 "flex.l"
+{  return MULFN;  }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 60 "flex.l"
-{return SUMFN;}
+#line 58 "flex.l"
+{  return SUMFN;  }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 61 "flex.l"
-{return PALINDROMEFN;}
+#line 59 "flex.l"
+{  return PALINDROMEFN;  }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 62 "flex.l"
-{return MUL ;}
+#line 60 "flex.l"
+{  return MUL ;  }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 63 "flex.l"
-{return DIV;}
+#line 61 "flex.l"
+{  return DIV;  }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 64 "flex.l"
-{return REPEAT;}
+#line 62 "flex.l"
+{  return REPEAT;  }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 65 "flex.l"
-{return UNTIL;}
+#line 63 "flex.l"
+{  return UNTIL;  }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 66 "flex.l"
-{return ITER;}
+#line 64 "flex.l"
+{  return ITER;  }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 67 "flex.l"
-{return DO;}
+#line 65 "flex.l"
+{  return DO;  }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 68 "flex.l"
-{return COL;}
+#line 66 "flex.l"
+{  return COL;  }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 69 "flex.l"
-{return GT;}
+#line 67 "flex.l"
+{  return GT;  }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 70 "flex.l"
-{return LT;}
+#line 68 "flex.l"
+{  return LT;  }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 71 "flex.l"
-{return EQL;}
+#line 69 "flex.l"
+{  return EQL;  }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 73 "flex.l"
-{	return *yytext;	}
+#line 71 "flex.l"
+{  return *yytext;  }
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 74 "flex.l"
+#line 72 "flex.l"
 {
-   yylval.i= hash_table(yytext);
-   return VAR;
-}
+                             yylval.i= hash_table(yytext);
+                             return VAR;
+                          }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 81 "flex.l"
-{return IF;}
+#line 77 "flex.l"
+{  return IF;  }
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 82 "flex.l"
-{return ELSEIF;}
+#line 78 "flex.l"
+{  return ELSEIF;  }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 83 "flex.l"
-{return ELSE;}
+#line 79 "flex.l"
+{  return ELSE;  }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 84 "flex.l"
-{return VOIDMAIN;}
+#line 80 "flex.l"
+{  return VOIDMAIN;  }
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 86 "flex.l"
-{;}
+#line 82 "flex.l"
+{  ;  }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 88 "flex.l"
+#line 84 "flex.l"
 {
-    yyerror("unknown character \n");
-    printf("error is :%s \n",yytext);
- }
+                             yyerror("unknown character \n");
+                             printf("error is :%s \n",yytext); 
+                          }
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 92 "flex.l"
+#line 89 "flex.l"
 ECHO;
 	YY_BREAK
-#line 970 "lex.yy.c"
+#line 968 "lex.yy.c"
 			case YY_STATE_EOF(INITIAL):
 				yyterminate();
 
@@ -1850,16 +1848,18 @@ int main()
 	return 0;
 	}
 #endif
-#line 92 "flex.l"
+#line 89 "flex.l"
 
 
 /* user subroutines */
 
-int hash_table(char *s){
-  	int len = strlen(s);
+int hash_table(char *s) {
+  	
+    int len = strlen(s);
     int hash_val = 0;
     int mod = 907;
     int positional_val = 1;
+    
     for(int j = len-1;j>=0;j--){
       int x = s[j]-'a';
       hash_val += x*positional_val;
@@ -1867,6 +1867,7 @@ int hash_table(char *s){
       positional_val++;
     }
     hash_val = hash_val%mod;
+
     /*printf("%d is hasval for %s\n",hash_val,s);*/
     return hash_val;
 

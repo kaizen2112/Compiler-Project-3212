@@ -1,14 +1,15 @@
 Null START(){
 
-	# Declaring variables
+	# Declaring VARIABLES
 	Num ab,bc,cd;
+	Num jj;
 
 	# This is a single line comment
 
-	Num de:40.0,e:5.3;
+	Num de:40.0, e:5.3;
 	Whole f:100;
 
-	Text str: "Hello everyone :3";
+	Text str: "Hello everyone! ";
 
 	Show(4 + 3 * e + f / 2 - de);
 
@@ -30,7 +31,7 @@ Null START(){
 	cd:7.0;
 	de:8.0;
 
-	# if else statements
+	# IF ELSE statements
 
 	Whether ( ( ab + de ) < SUM( bc , cd ) ) {
 		Show("ab+de is smaller than bc+cd");
@@ -54,6 +55,8 @@ Null START(){
 
 	Num p:20.0;
 
+	# SWITCH CASE statement
+
 	Check( p ) {
 		Match ( MUL ( ab , cd ) ) {
 			Show("Matched with first case");
@@ -72,6 +75,8 @@ Null START(){
 	Show("Now we move to the Repeat loops.");
 
 	Show("First repeat loop:");
+
+	# LOOPs
 
 	Repeat ( 1 : 5 : 2 ) {
 	   Show("This message will be shown 2 times");
