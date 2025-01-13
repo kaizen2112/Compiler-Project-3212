@@ -1,0 +1,7 @@
+We can simply run this Flex-Bison Parser by typing (./run.bat) in command line in Windows.
+or we can command in order :
+
+> bison -d parser.y
+> flex flex.l
+> gcc lex.yy.c parser.tab.c -o runner
+> ./runner.exe 
